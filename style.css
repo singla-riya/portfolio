@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+header{
+    padding: 16px;
+}
+header nav > a{
+    margin-right: 16px;
+    text-decoration: none;
+    
+    /* padding: 8px;
+   top: 0px; */
+}
+header nav > a:last-child{
+    margin-right: revert;
+    /* text-decoration: none; */
+}
+header nav > a:hover{
+    text-decoration: underline;
+    background-color: hsl(0deg 0% 50% / 48%);
+}
+header nav > a:visited{
+    text-decoration: black;
+}
+footer{
+    padding: 16px;
+    text-align: center;
+    border-top: 4px solid;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    padding: 16px;
+}
+.container >section> h2{
+    text-align: center;
+
+}
+.intro{
+    margin: -16px;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.intro img{
+    height: 250px;
+    width: 250px;
+    border-radius: 16px;
+}
+.dynamic-text-color{
+    color: royalblue;
+}
+
+form#contact {
+    max-width: 400px;
+    margin: auto;
+    padding: 16px;
+    border: 1px solid;
+    border-radius: 16px;
+}
+#contact label{
+    display: block;
+    font-weight: 600px;
+}
+#contact input, #contact textarea, #contact button{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+#contact-me{
+    margin-top: 16px;
+}
+.mobile-nav,
+section.menu {
+    display: none;
+}
+@media (width <500px){
+    .default-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: revert;
+    }
+    #menu-button{
+        display: block;
+        background: transparent;
+        border: 8px;
+        margin-left: auto;
+    }
+    section.menu{
+        display: revert;
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background: hsl(0, 0%, 100%);
+    }
+}
+@media (width<=400px){
+    #profolio-image
+    {
+        width: 100%;
+    }
+}
